@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Header() {
+export default function Header({ onViewResume }) {
     return (
         <header>
             <h1>Omkaar Achari</h1>
@@ -10,6 +10,24 @@ export default function Header() {
                 <a href="#skills">Skills</a>
                 <a href="#portfolio-website">Projects</a>
                 <a href="#contact">Contact</a>
+                <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                        marginLeft: '12px',
+                        textDecoration: 'none',
+                        color: 'inherit',
+                        padding: '0',
+                        background: 'none',
+                        border: 'none',
+                        font: 'inherit',
+                        cursor: 'pointer'
+                    }}
+                    className="nav-btn"
+                >
+                    Resume
+                </a>
             </nav>
             <div className="social-links">
                 <a href="https://www.linkedin.com/in/omkaar-achari-646262233/" target="_blank" title="LinkedIn" aria-label="LinkedIn" rel="noopener noreferrer">

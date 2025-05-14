@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import './style.css';
-import './style.css';
 import RainEffect from './components/RainEffect';
 import LightningEffect from './components/LightningEffect';
 import Header from './components/Header';
@@ -28,11 +27,15 @@ function App() {
     return () => window.removeEventListener("scroll", reveal);
   }, []);
 
+  const handleViewResume = () => {
+    window.open('/resume.pdf', '_blank');
+  };
+
   return (
     <div>
       <RainEffect />
       <LightningEffect />
-      <Header />
+      <Header onViewResume={handleViewResume} />
       <About />
       <Skills />
       <Projects />
