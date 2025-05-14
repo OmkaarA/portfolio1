@@ -32,7 +32,66 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.contact-section {
+  padding: 2rem 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 1rem 0.5rem;
+  }
+
+  .contact-form {
+    gap: 0.75rem;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .contact-button {
+    font-size: 0.95rem;
+    padding: 0.6rem;
   }
 }

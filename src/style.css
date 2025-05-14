@@ -323,6 +323,36 @@ html {
         align-items: center;
         text-align: center;
     }
+
+    .project-highlight-content {
+        flex-direction: column !important;
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .project-swiper {
+        width: 100%;
+        min-width: 0;
+        margin-right: 0;
+        max-width: 100vw;
+        position: relative;
+    }
+
+    .swiper-images img {
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .project-info {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        position: static !important;
+        margin: 0 !important;
+        transform: none !important;
+    }
 }
 
 @media (max-width: 600px) {
@@ -338,6 +368,43 @@ html {
     .project-info {
         min-width: 0;
         padding: 0;
+    }
+
+    .project-highlight-content {
+        flex-direction: column !important;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .project-swiper {
+        width: 100%;
+        min-width: 0;
+        margin-right: 0;
+        max-width: 100vw;
+        position: relative;
+    }
+
+    .swiper-images img {
+        height: 120px !important;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .project-info {
+        max-width: 100%;
+        min-width: 0;
+        padding: 0;
+        align-items: center !important;
+        text-align: center !important;
+        position: static !important;
+        margin: 0 !important;
+        transform: none !important;
+    }
+
+    .project-highlight {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -444,4 +511,116 @@ html {
 #skills,
 #contact {
     max-width: 1400px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 1.2rem 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+        font-size: 1rem;
+    }
+
+    .social-links {
+        margin-top: 0.5rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+        margin: 0 0.3rem;
+    }
+
+    section {
+        padding: 1rem 0.5rem;
+        margin: 1rem 0.2rem;
+        border-radius: 6px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .skills-list {
+        gap: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .projects-heading {
+        font-size: 1.3rem;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .project-highlight-content {
+        flex-direction: column !important;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .project-swiper {
+        width: 100%;
+        min-width: 0;
+        margin-right: 0;
+        max-width: 100vw;
+    }
+
+    .swiper-images img {
+        height: 120px !important;
+        border-radius: 6px;
+    }
+
+    .project-info {
+        max-width: 100%;
+        min-width: 0;
+        padding: 0;
+        align-items: center !important;
+        text-align: center !important;
+        position: static !important;
+        margin: 0 !important;
+        transform: none !important;
+    }
+
+    .project-highlight {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #portfolio-website .project-highlight-content,
+    #weather-dashboard .project-highlight-content,
+    #task-manager-app .project-highlight-content,
+    #ui-component-library .project-highlight-content {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        margin: 0 !important;
+        position: static !important;
+    }
+
+    #portfolio-website .project-info,
+    #weather-dashboard .project-info,
+    #task-manager-app .project-info,
+    #ui-component-library .project-info {
+        align-items: center !important;
+        text-align: center !important;
+        margin: 0 !important;
+        position: static !important;
+        transform: none !important;
+    }
 }

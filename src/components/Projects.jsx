@@ -41,7 +41,7 @@ export default function Projects() {
             {/* Portfolio Website Project */}
             <section className="project-highlight" id="portfolio-website" style={{ marginTop: '2rem' }}>
                 <div className="project-highlight-content">
-                    <div className="project-swiper">
+                    <div className="project-swiper" style={{ position: 'relative', minHeight: 0 }}>
                         <div className="swiper-images" style={{ display: 'flex', transition: 'transform 0.5s' }} id="swiper-portfolio">
                             <img src={placeholder1} alt="Portfolio Website 1" />
                             <img src={placeholder2} alt="Portfolio Website 2" />
@@ -67,7 +67,7 @@ export default function Projects() {
             {/* Task Manager App Project */}
             <section className="project-highlight" id="task-manager-app" style={{ marginTop: '2rem' }}>
                 <div className="project-highlight-content">
-                    <div className="project-swiper">
+                    <div className="project-swiper" style={{ position: 'relative', minHeight: 0 }}>
                         <div className="swiper-images" style={{ display: 'flex', transition: 'transform 0.5s' }} id="swiper-task">
                             <img src={placeholder2} alt="Task Manager App 1" />
                             <img src={placeholder3} alt="Task Manager App 2" />
@@ -93,7 +93,7 @@ export default function Projects() {
             {/* Weather Dashboard Project */}
             <section className="project-highlight" id="weather-dashboard" style={{ marginTop: '2rem' }}>
                 <div className="project-highlight-content">
-                    <div className="project-swiper">
+                    <div className="project-swiper" style={{ position: 'relative', minHeight: 0 }}>
                         <div className="swiper-images" style={{ display: 'flex', transition: 'transform 0.5s' }} id="swiper-weather">
                             <img src={placeholder3} alt="Weather Dashboard 1" />
                             <img src={placeholder4} alt="Weather Dashboard 2" />
@@ -119,7 +119,7 @@ export default function Projects() {
             {/* UI Component Library Project */}
             <section className="project-highlight" id="ui-component-library" style={{ marginTop: '2rem' }}>
                 <div className="project-highlight-content">
-                    <div className="project-swiper">
+                    <div className="project-swiper" style={{ position: 'relative', minHeight: 0 }}>
                         <div className="swiper-images" style={{ display: 'flex', transition: 'transform 0.5s' }} id="swiper-ui">
                             <img src={placeholder4} alt="UI Component Library 1" />
                             <img src={placeholder1} alt="UI Component Library 2" />
