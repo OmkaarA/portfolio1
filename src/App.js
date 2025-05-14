@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import './style.css';
+import './style.css';
+import RainEffect from './components/RainEffect';
+import LightningEffect from './components/LightningEffect';
+import Header from './components/Header';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const reveal = () => {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < trigger) {
+          section.classList.add("visible");
+        }
+      });
+    };
+    window.addEventListener("scroll", reveal);
+    reveal();
+    return () => window.removeEventListener("scroll", reveal);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <RainEffect />
+      <LightningEffect />
+      <Header />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
